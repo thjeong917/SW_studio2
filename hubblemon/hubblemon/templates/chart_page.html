@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block external %}
+<link href="../site_media/flot.css" rel="stylesheet" type="text/css">
+
+<script src="http://www.flotcharts.org/flot/jquery.flot.js"></script>
+<script src="http://www.flotcharts.org/flot/jquery.flot.pie.js"></script>
+<script src="http://www.flotcharts.org/flot/jquery.flot.time.js"></script>
+<!--
+<script src="http://cdn.jsdelivr.net/jquery.flot/0.8.3/jquery.flot.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.flot/0.8.3/jquery.flot.pie.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.flot/0.8.3/jquery.flot.time.js"></script>
+-->
+
+<script src="http://cipix2000.github.io/flot-cursors-plugin/jquery.flot.cursors.js"></script>
+
+{% endblock %}
+
+{% block title %}rrd chart view{% endblock %}
+{% block content %}
+	<div class="title"> Hubblemon </div>
+	<div class="main_link">
+	{{ main_link|safe }}
+	</div>
+
+	<div class="chart_list">
+	{{ chart_list|safe }}
+	</div>
+
+	<div class="chart_area">
+	{{ chart_data|safe }}
+	</div>
+{% endblock %}
+
+
