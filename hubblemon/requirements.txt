@@ -1,4 +1,4 @@
-Django==1.7.4
+Django==1.11.29
 kazoo==2.2.1
 pytz==2015.6
 rrdtool==0.1.2
